@@ -416,3 +416,19 @@ a:focus {
     cursor: pointer;
     fill: var(--snow);
 }
+.underline {
+    position: relative;
+    top: 17px;
+    border-radius: 2px;
+    background: var(--brand-color);
+}
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 53px;
+    height: 4px;
+    display: block;
+    background-color: var(--brand-color);
+}
